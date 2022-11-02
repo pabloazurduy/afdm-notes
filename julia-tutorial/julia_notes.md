@@ -283,7 +283,15 @@ A' # \= traspose(A)
 A\b # Ax=b, x = A/b
 ```
 
+### Symbol
+In Julia a [`Symbol`][7] will represent a private string in Julia (such as `+` or `=` or `var` where var is a declared variable, or could be a function name, etc). You usually eval and declare `Symbols` using `:` therefore 
 
+```julia 
+var = "hola"
+:var # this is the symbol for the variable `var`
+
+```
+### select 
 
 
 
@@ -295,6 +303,7 @@ A\b # Ax=b, x = A/b
 [4]: <https://juliahub.com/ui/Packages>
 [5]: <https://pkgdocs.julialang.org/v1/environments/>
 [6]: <https://docs.julialang.org/en/v1/manual/functions/#The-return-Keyword>
+[7]: <https://stackoverflow.com/a/23482257/5318634>
 
 [//]: # (Some snippets)
 [//]: # (add an image <img src="" style='height:400px;'>)
